@@ -27,7 +27,7 @@ int main()
   d2 *= 0.01;
   f2 *= 0.01;
 
-  // TODO#1 add comment describing what's happening
+  // when d2 and f2 get closer to 0 their actual value gets farther from 0
   std::cout << "\n**comment**" << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
@@ -35,7 +35,7 @@ int main()
   d2 *= 0.1;
   f2 *= 0.1;
 
-  // TODO#2 add comment describing what's happening
+  // d2 shows value but f2 shows zero because of underflow
   std::cout << "\n**comment**" << std::endl;
   std::cout << sizeof(d2) << " bytes, value: " << d2 << std::endl;
   std::cout << sizeof(f2) << " bytes, value: " << f2 << std::endl;
@@ -43,7 +43,7 @@ int main()
   double d3 = 3.5E38;
   float f3 = 3.5E38;
 
-  // TODO#3 add comment describing what happened
+  // d3 is the actual value because the maximum of float is greater but the value of float is inf because of Overflow
   std::cout << "\n**comment**" << std::endl;
   std::cout << std::setprecision(1);
   std::cout << sizeof(d3) << " bytes, value: " << d3 << std::endl;
